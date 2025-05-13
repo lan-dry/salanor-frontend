@@ -1,0 +1,27 @@
+
+@use "sass:color";
+@use 'bootstrap/scss/bootstrap' with (
+	$primary: #0A2540,
+	$secondary: #4E5D78,
+	$success: #22C55E,
+	$info: #3B82F6,
+	$warning: #FACC15,
+	$danger: #EF4444,
+	$light: #F8FAFC,
+	$dark: #1E293B,
+	$body-bg: #ffffff,
+	$body-color: #1E293B,
+);
+
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// /* Importing Bootstrap SCSS file. */
+// @import 'bootstrap/scss/bootstrap';
+// html, body {
+// 	margin: 0;
+// 	padding: 0;
+// 	overflow-x: hidden; // 💥 Prevent horizontal scrolling
+// }
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

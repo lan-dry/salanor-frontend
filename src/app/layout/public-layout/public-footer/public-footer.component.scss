@@ -1,0 +1,80 @@
+.site-footer {
+	background-color: #212226;
+	color: #f5f5f5;
+	padding: 4rem 2rem 2rem;
+	font-family: 'Segoe UI', sans-serif;
+
+	.footer-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1200px;
+		margin: auto;
+		gap: 2rem;
+	}
+
+	h2, h3 {
+		color: #ffffff;
+		margin-bottom: 1rem;
+	}
+
+	.footer-about, .footer-links, .footer-contact {
+		flex: 1 1 250px;
+		min-width: 250px;
+	}
+
+	.footer-about p {
+		color: #cfcfcf;
+		line-height: 1.6;
+	}
+
+	.footer-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.footer-links li {
+		margin-bottom: 0.5rem;
+	}
+
+	.footer-links a {
+		color: #cfcfcf;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+
+	.footer-links a:hover {
+		color: #0d6efd; // Bootstrap primary or adjust to your brand
+	}
+
+	.footer-contact p {
+		color: #cfcfcf;
+		margin: 0.3rem 0;
+	}
+
+	.footer-bottom {
+		text-align: center;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		margin-top: 2rem;
+		padding-top: 1rem;
+		font-size: 0.875rem;
+		color: #aaa;
+	}
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+	.footer-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-about, .footer-links, .footer-contact {
+		margin-bottom: 2rem;
+	}
+}
+
+
+.bi {
+	color: white;
+}

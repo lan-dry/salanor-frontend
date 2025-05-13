@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 0189e8882a8734016361a81ea30caa574725f754 Landry <jlandry476@yahoo.fr> 1746786706 +0100	commit (initial): initial commit
+0189e8882a8734016361a81ea30caa574725f754 66e37756a3ac54867979adba2072849d596acc71 Landry <jlandry476@yahoo.fr> 1747051355 +0100	commit: first commit
+66e37756a3ac54867979adba2072849d596acc71 66e37756a3ac54867979adba2072849d596acc71 Landry <jlandry476@yahoo.fr> 1747051364 +0100	Branch: renamed refs/heads/master to refs/heads/main
+66e37756a3ac54867979adba2072849d596acc71 3d6aa34e2a03b20c8d8517bf0ba436c112ad9d13 Landry <jlandry476@yahoo.fr> 1747052594 +0100	commit: added netlify.toml file
+3d6aa34e2a03b20c8d8517bf0ba436c112ad9d13 31c82d9392f7db774ce1ba02cc5244b9fb962a5d Landry <jlandry476@yahoo.fr> 1747052763 +0100	commit: added netlify.toml file
+31c82d9392f7db774ce1ba02cc5244b9fb962a5d ae4bad8ba3ee28e4a7a914e4610c4cc7b7d50cbf Landry <jlandry476@yahoo.fr> 1747052857 +0100	commit: added netlify.toml file
+ae4bad8ba3ee28e4a7a914e4610c4cc7b7d50cbf bd9021a3d31789e75a5be8a36105d04ad2d917e9 Landry <jlandry476@yahoo.fr> 1747052914 +0100	commit: added netlify.toml file
+bd9021a3d31789e75a5be8a36105d04ad2d917e9 49a240128ec2bbabebcff264d2cf31f600ab373b Landry <jlandry476@yahoo.fr> 1747053758 +0100	commit: added netlify.toml file
+49a240128ec2bbabebcff264d2cf31f600ab373b 3c89044f3c84e9819ab5f92fe92add196650ed6d Landry <jlandry476@yahoo.fr> 1747053922 +0100	commit: added netlify.toml file
+3c89044f3c84e9819ab5f92fe92add196650ed6d e7e71d71d7a48c617f366b1d518750e696a371bb Landry <jlandry476@yahoo.fr> 1747054023 +0100	commit: Remove deprecated Netlify Angular plugin
+e7e71d71d7a48c617f366b1d518750e696a371bb a94cd08897ff0a744311aa48b9a6ce229048bc55 Landry <jlandry476@yahoo.fr> 1747054138 +0100	commit: Fix publish directory for Netlify
+a94cd08897ff0a744311aa48b9a6ce229048bc55 901bdba52c17200d5838dbd82eaabaf946a3f22d Landry <jlandry476@yahoo.fr> 1747054273 +0100	commit: Fix publish directory for Netlify
+901bdba52c17200d5838dbd82eaabaf946a3f22d d11eae0125079b8f45326af485f91ef811552a32 Landry <jlandry476@yahoo.fr> 1747054540 +0100	commit: Fix server.ts for Netlify compatibility and update @netlify/angular-runtime
+d11eae0125079b8f45326af485f91ef811552a32 6c9770aa063852f316044d001a6055a49475b6d0 Landry <jlandry476@yahoo.fr> 1747055755 +0100	commit: Fix server.ts for Netlify compatibility and update @netlify/angular-runtime
+6c9770aa063852f316044d001a6055a49475b6d0 69e92ed378172dd04e5fb93d6ebc78d481903848 Landry <jlandry476@yahoo.fr> 1747055840 +0100	commit: Fix server.ts for Netlify compatibility and update @netlify/angular-runtime
+69e92ed378172dd04e5fb93d6ebc78d481903848 5fb61769bb7beb6c8fd1371b9c271cf83a8bf2dc Landry <jlandry476@yahoo.fr> 1747080583 +0100	commit: Fix server.ts for Netlify compatibility and update @netlify/angular-runtime
+5fb61769bb7beb6c8fd1371b9c271cf83a8bf2dc 379c9d87dc8c06258a34330b99f336dbb8a981b5 Landry <jlandry476@yahoo.fr> 1747080803 +0100	commit: Simplify server.ts for Netlify SSR

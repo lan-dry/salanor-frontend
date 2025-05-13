@@ -1,0 +1,123 @@
+<!-- aether.component.html -->
+<div class="container py-5">
+	<div class="row align-items-center mb-5">
+		<div class="col-md-6">
+			<h1 class="display-4 fw-bold text-primary">Meet Aether</h1>
+			<p class="lead text-muted">
+				The portable air quality monitor that empowers you with real-time environmental data. Breathe smarter, live better.
+			</p>
+			<button class="btn btn-outline-primary btn-lg mt-3" (click)="scrollToForm()">Join Waitlist</button>
+		</div>
+		<div class="col-md-6 text-center">
+			<!-- <img src="imgs/aether-gray.png" alt="Aether Device" class="img-fluid rounded shadow-lg"> -->
+			<img src="imgs/aether-gray.png" alt="Aether Device" height="60%" width="20%" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col-12">
+			<h2 class="fw-bold text-secondary mb-4">Features & Specifications</h2>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">✅ Tracks PM2.5, CO₂, VOCs, temperature & humidity</li>
+				<li class="list-group-item">✅ Real-time data via mobile app (iOS/Android)</li>
+				<li class="list-group-item">✅ Compact & travel-friendly design</li>
+				<li class="list-group-item">✅ Long battery life with USB-C charging</li>
+				<li class="list-group-item">✅ AI-powered health & environmental insights</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col-md-4">
+			<div class="card h-100 border-0 shadow-sm">
+				<div class="card-body">
+					<h5 class="card-title fw-semibold">Health</h5>
+					<p class="card-text">Stay informed about your environment to prevent respiratory issues and allergies.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card h-100 border-0 shadow-sm">
+				<div class="card-body">
+					<h5 class="card-title fw-semibold">Productivity</h5>
+					<p class="card-text">Monitor indoor air quality to improve focus, comfort, and energy levels at work or home.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card h-100 border-0 shadow-sm">
+				<div class="card-body">
+					<h5 class="card-title fw-semibold">Environment</h5>
+					<p class="card-text">Make data-driven choices that reduce exposure and environmental impact.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col-12">
+			<h2 class="fw-bold text-secondary mb-4">Use Cases</h2>
+		</div>
+		<div class="col-md-3 col-sm-6 mb-4">
+			<div class="text-center">
+				<img src="imgs/home-icon.svg" class="mb-2" alt="Home" width="60">
+				<i class="fa-solid fa-house"></i>
+				<p class="fw-medium">Home & Family</p>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 mb-4">
+			<div class="text-center">
+				<img src="imgs/coworking.svg" class="mb-2" alt="Office" width="60">
+				<p class="fw-medium">Offices & Co-working</p>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 mb-4">
+			<div class="text-center">
+				<img src="imgs/jogging.svg" class="mb-2" alt="Travel" width="60">
+				<p class="fw-medium">Travel & Outdoors</p>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 mb-4">
+			<div class="text-center">
+				<img src="imgs/ngo.svg" class="mb-2" alt="NGOs & Governments" width="60">
+				<p class="fw-medium">NGOs & Public Sector</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col-md-6">
+			<div class="ratio ratio-16x9">
+				<iframe src="https://www.youtube.com/embed/demo-video-id" title="Aether Demo Video" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="col-md-6 d-flex align-items-center">
+			<div>
+				<h3 class="fw-bold">See Aether in Action</h3>
+				<p>Watch how Aether helps users understand their air and take meaningful action.</p>
+				<button class="btn btn-primary btn-lg mt-2" (click)="onPreOrderClick()">Pre-order Now</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center py-5 border-top" id="waitlist-form">
+		<h4 class="fw-bold">Be the first to know when Aether launches</h4>
+		<p class="text-muted">Join our waitlist and get early access, updates, and exclusive offers.</p>
+		<form class="row g-3 justify-content-center" (ngSubmit)="onSubmitEmail(emailForm)" #emailForm="ngForm">
+			<div class="col-md-4">
+				<input type="email" name="email" required ngModel class="form-control" placeholder="Your email address">
+			</div>
+			<div class="col-md-2">
+				<!-- <button type="submit" class="btn btn-outline-secondary w-100">
+					Notify Me
+					<mat-spinner *ngIf="!loading" diameter="20" strokeWidth="3"></mat-spinner>
+				</button> -->
+				<button type="submit" class="btn btn-outline-secondary w-100" [disabled]="emailForm.invalid || loading" style="display: flex; align-items: center; justify-content: center;">
+					<span>Notify Me</span>
+					<mat-spinner *ngIf="loading" diameter="20" strokeWidth="3" style="margin-left: 10px;"></mat-spinner>
+				</button>				  
+			</div>
+		</form>
+		<p *ngIf="successMessage" class="text-success mt-2">{{ successMessage }}</p>
+	</div>
+</div>

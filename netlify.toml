@@ -1,0 +1,10 @@
+[build]
+  command = "ng build --configuration production"
+  publish = "dist/salanor-frontend/browser"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  inputs = {}
+
+[context.production.environment]
+  NODE_ENV = "production"

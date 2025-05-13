@@ -1,0 +1,146 @@
+$primary: #0A2540;
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+
+    // Create flex layout with left/center/right zones
+    .left, .center, .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .center {
+      justify-content: center;
+    }
+
+    .right {
+      justify-content: flex-end;
+    }
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    color: #222;
+  }
+
+  nav a {
+    position: relative;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background-color: $primary;
+      transition: width 0.3s ease;
+    }
+
+    &:hover,
+    &.active {
+      color: $primary;
+    }
+
+    &:hover::after,
+    &.active::after {
+      width: 100%;
+    }
+  }
+
+  .contact-button {
+    background-color: $primary;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+
+  &.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+    .container {
+      padding: 0.8rem 3rem;
+    }
+
+    .logo {
+      transform: scale(0.9);
+      font-size: 1.5rem;
+    }
+  }
+}
+
+
+  
+
+
+// .top-bar {
+// 	background-color: #1e1e1e;
+// 	color: white;
+// 	padding: 12px;
+// 	text-align: center;
+// 	font-size: 14px;
+// }
+
+// .main-header {
+// 	position: sticky;
+// 	top: 0;
+// 	z-index: 1000;
+// 	transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+// 	background-color: transparent;
+// 	backdrop-filter: none;
+// }
+
+// .main-header nav {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	padding: 1rem 2rem;
+// }
+
+// .main-header nav ul {
+// 	list-style: none;
+// 	display: flex;
+// 	gap: 1.5rem;
+// }
+
+// .main-header nav a {
+// 	text-decoration: none;
+// 	color: #333;
+// 	font-weight: 500;
+// }
+
+// .main-header.sticky {
+// 	background-color: white;
+// 	backdrop-filter: blur(6px);
+// 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+// }

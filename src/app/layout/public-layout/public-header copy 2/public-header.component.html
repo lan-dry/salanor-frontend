@@ -1,0 +1,55 @@
+<header [class.scrolled]="isScrolled" style="background-color: #F3EDE1; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+	<div class="container">
+		<div class="left">
+			<div class="logo" style="cursor: pointer;" routerLink="/">
+				<img src="logo.png" height="50px" alt=""> SALANOR
+			</div>
+		</div>
+	
+		<div class="center">
+			<nav>
+				<a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+				<a routerLink="/about" routerLinkActive="active">About</a>
+				<a routerLink="/services" routerLinkActive="active">Services</a>
+			</nav>
+		</div>
+	
+		<div class="right">
+			<a class="contact-button" routerLink="/contact">Contact Us</a>
+		</div>
+	</div>
+</header>
+  
+  
+  
+  
+  
+
+<!-- <main>
+	<div style="height: 2000px; padding: 2rem;">
+	Scroll to see the sticky header effect in action.
+	</div>
+</main> -->
+  
+ 
+ 
+ <!-- <div #topBar class="top-bar">
+	Welcome to our elegant site!
+</div>
+
+<header class="main-header" [class.sticky]="!topBarVisible">
+	<nav>
+	<h1>Brand</h1>
+	<ul>
+		<li><a routerLink="/">Home</a></li>
+		<li><a routerLink="/services">Services</a></li>
+		<li><a routerLink="/contact">Contact</a></li>
+	</ul>
+	</nav>
+</header>
+
+<main>
+	<div style="height: 2000px; padding: 2rem;">
+	Scroll to see the header change background as the top bar scrolls out.
+	</div>
+</main> -->

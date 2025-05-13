@@ -1,0 +1,72 @@
+<header [class.scrolled]="isScrolled">
+	<div class="container-fluid">
+		<div class="left">
+			<div class="logo" style="cursor: pointer;" routerLink="/">
+				<img src="logo.png" height="50px" alt=""> SALANOR
+			</div>
+		</div>
+
+		<div class="center">
+			<nav>
+				<a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+				<a routerLink="/about" routerLinkActive="active">About</a>
+				<a routerLink="/product" routerLinkActive="active">Product</a>
+				<a routerLink="/market-impact" routerLinkActive="active">Impact</a>
+				<a routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+			</nav>
+		</div>
+
+		<div class="right">
+			<a class="contact-button" routerLink="/start-project">Start Project</a>
+			<span class="hamburger" (click)="toggleMenu()">☰</span>
+		</div>
+	</div>
+
+	<!-- Side navigation panel -->
+	<div class="side-nav" [class.open]="menuOpen">
+		<span class="close-btn" (click)="toggleMenu()">×</span>
+		<nav>
+			<a routerLink="/" (click)="toggleMenu()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+			<a routerLink="/about" (click)="toggleMenu()" routerLinkActive="active">About</a>
+			<a routerLink="/product" (click)="toggleMenu()" routerLinkActive="active">Product</a>
+			<a routerLink="/market-impact" (click)="toggleMenu()" routerLinkActive="active">Impact</a>
+			<a routerLink="/contact-us" (click)="toggleMenu()" routerLinkActive="active">Contact Us</a>
+			<a class="contact-button mt-4" (click)="toggleMenu()" routerLink="/start-project">Start Project</a>
+		</nav>
+	</div>
+</header>
+
+  
+  
+  
+  
+  
+
+<!-- <main>
+	<div style="height: 2000px; padding: 2rem;">
+	Scroll to see the sticky header effect in action.
+	</div>
+</main> -->
+  
+ 
+ 
+ <!-- <div #topBar class="top-bar">
+	Welcome to our elegant site!
+</div>
+
+<header class="main-header" [class.sticky]="!topBarVisible">
+	<nav>
+	<h1>Brand</h1>
+	<ul>
+		<li><a routerLink="/">Home</a></li>
+		<li><a routerLink="/services">Services</a></li>
+		<li><a routerLink="/contact">Contact</a></li>
+	</ul>
+	</nav>
+</header>
+
+<main>
+	<div style="height: 2000px; padding: 2rem;">
+	Scroll to see the header change background as the top bar scrolls out.
+	</div>
+</main> -->

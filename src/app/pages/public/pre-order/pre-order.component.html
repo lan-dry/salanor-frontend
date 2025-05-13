@@ -1,0 +1,110 @@
+<section class="preorder-section">
+	<div class="container">
+	<!-- Pre-order Hero Section -->
+	<div class="hero-section text-center">
+		<h1 class="hero-title">Pre-order Aether</h1>
+		<p class="hero-description">Be one of the first to experience Aether — the portable air quality monitor designed for a healthier, smarter lifestyle. Pre-order now and get exclusive early access.</p>
+		<button class="cta-btn">Pre-order Now</button>
+	</div>
+
+	<!-- Product Features Section -->
+	<div class="features-section">
+		<h2 class="section-title">Why Pre-order Aether?</h2>
+		<div class="features-grid">
+		<div class="feature-card">
+			<img src="assets/icons/health-icon.svg" alt="Health" class="feature-icon" />
+			<h3>Health Benefits</h3>
+			<p>Stay informed about your environment to prevent respiratory issues and allergies.</p>
+		</div>
+		<div class="feature-card">
+			<img src="assets/icons/productivity-icon.svg" alt="Productivity" class="feature-icon" />
+			<h3>Boost Productivity</h3>
+			<p>Monitor air quality to improve focus, comfort, and energy levels at work or home.</p>
+		</div>
+		<div class="feature-card">
+			<img src="assets/icons/environment-icon.svg" alt="Environment" class="feature-icon" />
+			<h3>Help the Planet</h3>
+			<p>Make data-driven choices that reduce exposure and environmental impact.</p>
+		</div>
+		</div>
+	</div>
+
+	<!-- Pre-order Form Section -->
+	<div class="form-section">
+		<h2 class="section-title text-center">Secure Your Pre-order</h2>
+		<p class="form-description text-center">Fill in your details to pre-order Aether and get notified when it ships.</p>
+		<form [formGroup]="preorderForm" (ngSubmit)="onSubmit()" class="preorder-form">
+		  <div class="form-group">
+			<label for="email" class="form-label">Email Address</label>
+			<input
+			  type="email"
+			  id="email"
+			  formControlName="email"
+			  class="form-input"
+			  placeholder="Enter your email"
+			/>
+			<div *ngIf="email.touched && email.invalid" class="error-message">
+			  <div *ngIf="email.hasError('required')">Email is required.</div>
+			  <div *ngIf="email.hasError('email')">Invalid email format.</div>
+			</div>
+		  </div>
+  
+		  <div class="form-group">
+			<label for="quantity" class="form-label">Quantity</label>
+			<input
+			  type="number"
+			  id="quantity"
+			  formControlName="quantity"
+			  class="form-input"
+			  min="1"
+			  value="1"
+			/>
+			<div *ngIf="quantity.touched && quantity.invalid" class="error-message">
+			  <div *ngIf="quantity.hasError('required')">Quantity is required.</div>
+			  <div *ngIf="quantity.hasError('min')">Minimum quantity is 1.</div>
+			</div>
+		  </div>
+  
+		  <button type="submit" class="cta-btn" [disabled]="preorderForm.invalid">Pre-order Now</button>
+  
+		  <!-- Success or Error Messages -->
+		  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+		  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+		</form>
+	</div>
+	<!-- <div class="form-section">
+		<h2 class="section-title text-center">Secure Your Pre-order</h2>
+		<p class="form-description text-center">Fill in your details to pre-order Aether and get notified when it ships.</p>
+		<form class="preorder-form">
+			<div class="form-group">
+				<label for="email" class="form-label">Email Address</label>
+				<input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required />
+			</div>
+			<div class="form-group">
+				<label for="quantity" class="form-label">Quantity</label>
+				<input type="number" id="quantity" name="quantity" class="form-input" min="1" value="1" required />
+			</div>
+		<button type="submit" class="cta-btn">Pre-order Now</button>
+		</form>
+	</div> -->
+
+	<!-- Customer Reviews Section -->
+	<div class="reviews-section">
+		<h2 class="section-title">What Customers Are Saying</h2>
+		<div class="reviews-grid">
+		<div class="review-card">
+			<img src="assets/images/review-1.jpg" alt="Customer" class="review-avatar" />
+			<p class="review-text">"Aether is a game-changer! I can track air quality anytime, anywhere, and make informed decisions for my health."</p>
+			<h4 class="review-name">Jane Doe</h4>
+			<p class="review-location">New York, USA</p>
+		</div>
+		<div class="review-card">
+			<img src="assets/images/review-2.jpg" alt="Customer" class="review-avatar" />
+			<p class="review-text">"As someone who travels often, Aether has helped me monitor air quality in new environments, ensuring I'm always breathing clean air."</p>
+			<h4 class="review-name">John Smith</h4>
+			<p class="review-location">London, UK</p>
+		</div>
+		</div>
+	</div>
+	</div>
+</section>

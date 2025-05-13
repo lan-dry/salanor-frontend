@@ -1,0 +1,116 @@
+.section {
+	padding: 80px 20px;
+	background-color: #fff;
+	color: #222;
+}
+
+.section:nth-child(even) {
+	background-color: #f8f6f2;
+}
+
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+.form-container {
+	background: #ffffff;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin-bottom: 24px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+input, select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 16px;
+	font-family: inherit;
+}
+
+.cta.dark {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 14px 28px;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.cta.dark:hover {
+	background-color: #555;
+}
+
+.logo-strip {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.logo-strip img {
+	height: 40px;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.logo-strip img:hover {
+	opacity: 1;
+}
+
+
+.loading-spinner {
+	text-align: center;
+	font-size: 16px;
+	color: #555;
+  }
+  
+  .success-message, .error-message {
+	text-align: center;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+  }
+  
+  .success-message {
+	background-color: #d4edda;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+  }
+  
+  .error-message {
+	background-color: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+  }
+  

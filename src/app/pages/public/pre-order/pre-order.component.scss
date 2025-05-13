@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Pre-order Section */
+.preorder-section {
+	padding: 80px 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+.hero-section {
+	margin-bottom: 60px;
+}
+
+.hero-title {
+	font-size: 48px;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+.hero-description {
+	font-size: 18px;
+	color: #7f8c8d;
+	margin-bottom: 30px;
+	line-height: 1.6;
+}
+
+.cta-btn {
+	background-color: #2980b9;
+	color: #fff;
+	padding: 15px 30px;
+	font-size: 18px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+	background-color: #1c6ea4;
+}
+
+.features-section {
+	margin-bottom: 80px;
+}
+
+.section-title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.features-grid {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.feature-card {
+	background-color: #ecf0f1;
+	padding: 40px;
+	border-radius: 12px;
+	width: 280px;
+	text-align: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 20px;
+}
+
+.feature-card h3 {
+	font-size: 24px;
+	color: #2c3e50;
+	margin-bottom: 20px;
+}
+
+.feature-card p {
+	font-size: 16px;
+	color: #7f8c8d;
+	line-height: 1.6;
+}
+
+.form-section {
+	background-color: #ecf0f1;
+	padding: 60px 0;
+	border-radius: 12px;
+}
+
+.form-description {
+	font-size: 18px;
+	color: #7f8c8d;
+	margin-bottom: 30px;
+}
+
+.preorder-form {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-label {
+	font-size: 16px;
+	color: #2c3e50;
+}
+
+.form-input {
+	width: 100%;
+	padding: 15px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	margin-top: 8px;
+}
+
+.reviews-section {
+	margin-top: 80px;
+}
+
+.reviews-grid {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.review-card {
+	background-color: #fff;
+	padding: 30px;
+	width: 300px;
+	text-align: center;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-avatar {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.review-text {
+	font-size: 16px;
+	color: #7f8c8d;
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+.review-name {
+	font-size: 18px;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+.review-location {
+	font-size: 14px;
+	color: #7f8c8d;
+}
+
+
+
+/* Styling for error messages */
+.error-message {
+	color: red;
+	font-size: 14px;
+}
+
+.success-message {
+	color: green;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.cta-btn:disabled {
+	background-color: #ccc;
+}

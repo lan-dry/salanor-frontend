@@ -1,0 +1,106 @@
+<section class="section start-project-hero">
+	<div class="content center">
+	<h1>Start a Project with Salanor</h1>
+	<p>Let’s bring your ideas to life with smart, scalable, and human-centered technology.</p>
+	</div>
+</section>
+
+<section class="section project-intro">
+	<div class="content">
+	<h2>Your Vision, Our Expertise</h2>
+	<p>
+		Whether you're integrating <b>Aether</b> into your ecosystem, building a new digital product, or exploring smart city solutions —
+		Salanor is here to partner with you from concept to impact.
+	</p>
+	<p>Fill out the form below to help us understand your goals.</p>
+	</div>
+</section>
+
+<section class="section project-form">
+	<div class="form-container">
+		<form (ngSubmit)="onSubmit(projectForm)" #projectForm="ngForm">
+			<div class="form-group">
+			<label for="name">Full Name *</label>
+			<input type="text" id="name" name="name" ngModel required />
+			</div>
+
+			<div class="form-group">
+			<label for="organization">Organization</label>
+			<input type="text" id="organization" name="organization" ngModel />
+			</div>
+
+			<div class="form-group">
+			<label for="email">Email Address *</label>
+			<input type="email" id="email" name="email" ngModel required />
+			</div>
+
+			<div class="form-group">
+			<label for="interest">Area of Interest *</label>
+			<select id="interest" name="interest" ngModel required>
+				<option value="" disabled selected>Select one</option>
+				<option>Aether Integration</option>
+				<option>Custom Software</option>
+				<option>Smart City / IoT Solutions</option>
+				<option>Other</option>
+			</select>
+			</div>
+
+			<div class="form-group">
+			<label for="budget">Estimated Budget</label>
+			<select id="budget" name="budget" ngModel>
+				<option value="" disabled selected>Select a range</option>
+				<option>&lt; $5,000</option>
+				<option>$5,000 – $20,000</option>
+				<option>$20,000 – $50,000</option>
+				<option>$50,000+</option>
+			</select>
+			</div>
+
+			<div class="form-group">
+			<label for="timeline">Ideal Timeline</label>
+			<input type="text" id="timeline" name="timeline" ngModel placeholder="e.g. ASAP, 3–6 months" />
+			</div>
+
+			<div class="form-group">
+			<label for="message">Tell us about your project *</label>
+			<textarea id="message" name="message" ngModel required rows="5"></textarea>
+			</div>
+
+			<button type="submit" class="cta dark" [disabled]="!projectForm.valid">Submit Request</button>
+		</form>
+		<!-- Loading Spinner -->
+		<div *ngIf="isLoading" class="loading-spinner">
+			<p>Submitting your request...</p>
+		  </div>
+	  
+		  <!-- Success Message -->
+		  <div *ngIf="successMessage" class="success-message">
+			<p>{{ successMessage }}</p>
+		  </div>
+	  
+		  <!-- Error Message -->
+		  <div *ngIf="errorMessage" class="error-message">
+			<p>{{ errorMessage }}</p>
+		  </div>
+	</div>
+</section>
+
+<section class="section what-next">
+	<div class="content center">
+	<h3>What Happens Next?</h3>
+	<p>We’ll review your request and get back to you within 1–2 business days to schedule a discovery call and explore how we can collaborate.</p>
+	</div>
+</section>
+
+<section class="section trusted-by">
+	<div class="content center">
+	<h3>Trusted By Innovators</h3>
+	<p>Our solutions power startups, schools, environmental orgs, and smart cities around the world.</p>
+	<div class="logo-strip">
+		<!-- Add logos of partners or use placeholder -->
+		<img src="assets/partner1.svg" alt="Partner 1" />
+		<img src="assets/partner2.svg" alt="Partner 2" />
+		<img src="assets/partner3.svg" alt="Partner 3" />
+	</div>
+	</div>
+</section>
