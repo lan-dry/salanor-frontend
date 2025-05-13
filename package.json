@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:salanor-frontend": "node dist/salanor-frontend/server/server.mjs"
+    "serve:ssr:salanor-frontend": "node dist/salanor-frontend/server/server.mjs",
+	
+	"dev:ssr": "ng run salanor-frontend:serve-ssr",
+	"build:ssr": "ng build && ng run salanor-frontend:server",
+	"start": "node dist/salanor-frontend/server/server.mjs"
   },
   "private": true,
   "dependencies": {
