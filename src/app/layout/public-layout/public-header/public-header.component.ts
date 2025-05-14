@@ -14,15 +14,19 @@ import { fromEvent, throttleTime, map, pairwise, distinctUntilChanged, share, fi
 	styleUrl: './public-header.component.scss',
 })
 export class PublicHeaderComponent {
-	// company = {
-	// 	links: {
-	// 	  twitter: "https://twitter.com/yourcompany",
-	// 	  facebook: "https://facebook.com/yourcompany",
-	// 	  linkedin: "https://linkedin.com/company/yourcompany",
-	// 	  instagram: "https://instagram.com/yourcompany",
-	// 	  youtube: "https://youtube.com/c/yourcompany"
-	// 	}
-	// };
+	company = {
+		links: {
+			twitter: "https://twitter.com/yourcompany",
+			facebook: "https://facebook.com/yourcompany",
+			linkedin: "https://linkedin.com/company/yourcompany",
+			instagram: "https://instagram.com/yourcompany",
+			youtube: "https://youtube.com/c/yourcompany",
+			f6s: "https://www.f6s.com/salanor"
+		},
+		email: "hello@salanor.com",
+		phone: "111111111111",
+		address: "29 rue jaouhara, Av. Fethi zouhir, Ariana, Tunisia"
+	};
 	// logo = "logo.png";
 	// address = "29 rue jaouhara, Av. Fethi zouhir, Ariana, Tunisia";
 	// phone = "+216 55237098";

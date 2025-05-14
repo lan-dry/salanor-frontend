@@ -26,6 +26,33 @@
 	</div>
 </div>
 
+<!-- <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #0C4D51;"> -->
+<div class="container-fluid px-5 d-none d-lg-block" style="background-color: #1E4E59;">
+    <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <small class="text-light"><i class="fa fa-envelope-open me-2"></i> {{ company.email }} </small>
+                <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i> {{ 'contact@salanor.com' }} </small>
+                <!-- <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i> {{ company.phone }} </small> -->
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <!-- <a *ngIf="company?.links?.twitter" class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" [href]="company.links.twitter" target="_blank"><i class="fab fa-twitter fw-normal"></i></a> -->
+                <a *ngIf="company?.links?.facebook" class="btn btn-sm p-0 mx-2" [href]="'https://www.facebook.com/profile.php?id=61575869666247'" target="_blank">
+					<i class="bi bi-facebook fw-normal" style="font-size: 1.5rem; color: #0C70F2;"></i>
+				</a>
+                <a *ngIf="company?.links?.linkedin  " class="btn btn-sm p-0 mx-2" [href]="'https://www.linkedin.com/company/salanor'" target="_blank">
+					<i class="bi bi-linkedin" style="font-size: 1.5rem; color: #0B6BBF;"></i>
+				</a>
+                <!-- <a *ngIf="company?.links?.instagram" class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" [href]="company.links.instagram" target="_blank"><i class="fab fa-instagram fw-normal"></i></a> -->
+                <a *ngIf="company?.links?.f6s" class="btn btn-sm p-0 mx-2" [href]="company.links.f6s" target="_blank">
+					<img src="imgs/f6s-icon.png" class="mb-1" alt="F6S" style="width: 28px; height: 28px;">
+				</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <header [class.scrolled]="isScrolled" class="small-screen" style="background-color: #F3EDE1;">
 	<div class="sidebar" [ngClass]="{'sidebar-open': isSidebarOpen}">
