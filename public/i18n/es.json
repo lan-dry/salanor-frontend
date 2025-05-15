@@ -156,6 +156,23 @@
 		"waitlist_description": "Únete a nuestra lista de espera y obtén acceso anticipado, actualizaciones y ofertas exclusivas.",
 		"cta_notify": "Notificarme",
 		"form_placeholder": "Tu dirección de correo electrónico"
-  	}
+  	},
+	"contact_us": {
+		"get_in_touch": "Póngase en contacto",
+		"description": "Ya sea que tenga curiosidad sobre Aether, esté explorando una solución inteligente o esté listo para colaborar, estamos aquí para escuchar.",
+		"email_label": "Correo electrónico:",
+		"send_message": "Envíenos un mensaje",
+		"full_name": "Nombre completo *",
+		"email_address": "Correo electrónico *",
+		"subject": "Asunto",
+		"your_message": "Su mensaje *",
+		"send_button": "Enviar mensaje",
+		"error_name_required": "El nombre es obligatorio.",
+		"error_email_required": "El correo electrónico es obligatorio.",
+		"error_email_invalid": "Ingrese una dirección de correo electrónico válida.",
+		"error_message_required": "El mensaje es obligatorio.",
+		"success_message": "Su mensaje ha sido enviado con éxito.",
+		"error_message": "Algo salió mal. Por favor, inténtelo de nuevo más tarde."
+	}
 }
   

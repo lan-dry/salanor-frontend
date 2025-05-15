@@ -156,6 +156,23 @@
 		"waitlist_description": "Join our waitlist and get early access, updates, and exclusive offers.",
 		"cta_notify": "Notify Me",
 		"form_placeholder": "Your email address"
-  	}
+  	},
+	"contact_us": {
+		"get_in_touch": "Get in Touch",
+		"description": "Whether you’re curious about Aether, exploring a smart solution, or ready to collaborate — we're here to listen.",
+		"email_label": "Email:",
+		"send_message": "Send Us a Message",
+		"full_name": "Full Name *",
+		"email_address": "Email Address *",
+		"subject": "Subject",
+		"your_message": "Your Message *",
+		"send_button": "Send Message",
+		"error_name_required": "Name is required.",
+		"error_email_required": "Email is required.",
+		"error_email_invalid": "Enter a valid email address.",
+		"error_message_required": "Message is required.",
+		"success_message": "Your message has been sent successfully.",
+		"error_message": "Something went wrong. Please try again later."
+	}
 }
   

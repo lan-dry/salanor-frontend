@@ -2,11 +2,12 @@ import { ContactService } from './../../../core/services/contact.service';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-contact',
 	imports: [
-		FormsModule, CommonModule
+		FormsModule, CommonModule, TranslateModule
 	],
 	templateUrl: './contact.component.html',
 	styleUrl: './contact.component.scss'
