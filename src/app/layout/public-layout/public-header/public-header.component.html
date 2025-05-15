@@ -1,39 +1,9 @@
-<div class="sidebar-wrapper" style="display: none;">
-	<!-- Sidebar -->
-	<div class="sidebar" [ngClass]="{'sidebar-open': isSidebarOpen}">
-		<div class="sidebar-header">
-			<button class="btn btn-close" (click)="toggleSidebar()">×</button>
-		</div>
-		<ul class="list-group list-group-flush">
-			<li class="list-group-item text-white bg-dark">Home</li>
-			<li class="list-group-item text-white bg-dark">Profile</li>
-			<li class="list-group-item text-white bg-dark">Settings</li>
-			<li class="list-group-item text-white bg-dark">Logout</li>
-		</ul>
-	</div>
-
-	<!-- Backdrop -->
-	<div class="backdrop" *ngIf="isSidebarOpen" (click)="toggleSidebar()"></div>
-
-	<!-- Main Content -->
-	<div class="main-content">
-		<header >
-			<button class="btn btn-primary" (click)="toggleSidebar()">☰</button>
-			<div class="logo" style="cursor: pointer;" routerLink="/">
-				<img src="logo.png" height="50px" alt=""> SALANOR
-			</div>
-		</header>
-	</div>
-</div>
-
-<!-- <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #0C4D51;"> -->
 <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #1E4E59;">
     <div class="row gx-0">
         <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center" style="height: 45px;">
                 <small class="text-light"><i class="fa fa-envelope-open me-2"></i> {{ company.email }} </small>
                 <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i> {{ 'contact@salanor.com' }} </small>
-                <!-- <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i> {{ company.phone }} </small> -->
             </div>
         </div>
         <div class="col-lg-4 text-center text-lg-end">
@@ -59,25 +29,36 @@
 		<div class="sidebar-header">
 			<span class="btn-close" (click)="toggleSidebar()">×</span>
 		</div>
-		<!-- <ul class="list-group list-group-flush">
-			<li class="list-group-item text-white" routerLinkActive="active-link">Home</li>
-			<li class="list-group-item text-white" routerLinkActive="active">Profile</li>
-			<li class="list-group-item text-white" routerLinkActive="active">Settings</li>
-			<li class="list-group-item text-white" routerLinkActive="active">Logout</li>
-			<li class="list-group-item text-white" routerLinkActive="active">Logout</li>
-		</ul> -->
 		<nav class="list-group list-group-flush">
-			<a class="list-group-item text-white" routerLink="/" (click)="toggleSidebar()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-			<a class="list-group-item text-white" routerLink="/about-us" (click)="toggleSidebar()" routerLinkActive="active">About</a>
-			<a class="list-group-item text-white" routerLink="/product" (click)="toggleSidebar()" routerLinkActive="active">Product</a>
-			<a class="list-group-item text-white" routerLink="/market-impact" (click)="toggleSidebar()" routerLinkActive="active">Impact</a>
-			<a class="list-group-item text-white" routerLink="/contact-us" (click)="toggleSidebar()" routerLinkActive="active">Contact Us</a>
+			<a class="list-group-item text-white" routerLink="/" (click)="toggleSidebar()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+				{{ 'header.home' | translate }}
+			</a>
+			<a class="list-group-item text-white" routerLink="/about-us" (click)="toggleSidebar()" routerLinkActive="active">
+				{{ 'header.about' | translate }}
+			</a>
+			<a class="list-group-item text-white" routerLink="/product" (click)="toggleSidebar()" routerLinkActive="active">
+				{{ 'header.product' | translate }}
+			</a>
+			<a class="list-group-item text-white" routerLink="/market-impact" (click)="toggleSidebar()" routerLinkActive="active">
+				{{ 'header.impact' | translate }}
+			</a>
+			<a class="list-group-item text-white" routerLink="/contact-us" (click)="toggleSidebar()" routerLinkActive="active">
+				{{ 'header.contact' | translate }}
+			</a>
+			
 			<!-- <b href="javascript:void(0)" class="m-4" (click)="toggleSidebar()">
 				<div>
 					<a class="contact-button py-2" routerLink="/start-project">Start Project</a>
 				</div>
 			</b> -->
 		</nav>
+		<div class="language-switcher mt-3" style="display: flex;">
+			<select (change)="switchLang($event)" [(ngModel)]="selectedLanguage" style="margin-left: auto; margin-right: auto; width: 75%;">
+			  <option *ngFor="let lang of languages" [value]="lang.value" [hidden]="lang.value === selectedLanguage">
+				<span class="flag-icon flag-icon-us"></span>{{ lang.label }}
+			  </option>
+			</select>
+		</div>		  
 	</div>
 	
 	<!-- Backdrop -->
@@ -94,31 +75,8 @@
 				<img src="logo.png" height="50px" alt=""> SALANOR
 			</div>
 		</div>
-
-		<!-- <div class="right">
-			<span class="hamburger" (click)="toggleSidebar()">☰</span>
-		</div> -->
 	</div>
-
-	<!-- Side navigation panel -->
-	<!-- <div class="side-nav" [class.open]="isSidebarOpen" [class.close]="!isSidebarOpen">
-		<span class="close-btn" (click)="toggleSidebar()">×</span>
-		<nav>
-			<a routerLink="/" (click)="toggleSidebar()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-			<a routerLink="/about" (click)="toggleSidebar()" routerLinkActive="active">About</a>
-			<a routerLink="/product" (click)="toggleSidebar()" routerLinkActive="active">Product</a>
-			<a routerLink="/market-impact" (click)="toggleSidebar()" routerLinkActive="active">Impact</a>
-			<a routerLink="/contact-us" (click)="toggleSidebar()" routerLinkActive="active">Contact Us</a>
-			<a class="contact-button mt-4" (click)="toggleSidebar()" routerLink="/start-project">Start Project</a>
-		</nav>
-	</div> -->
 </header>
-
-
-
-
-
-
 
 
 
@@ -132,53 +90,27 @@
 	
 		<div class="center">
 			<nav>
-				<a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-				<a routerLink="/about-us" routerLinkActive="active">About Us</a>
-				<a routerLink="/product" routerLinkActive="active">Product</a>
-				<a routerLink="/market-impact" routerLinkActive="active">Impact</a>
+				<a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ 'header.home' | translate }}</a>
+				<a routerLink="/about-us" routerLinkActive="active">{{ 'header.about' | translate }}</a>
+				<a routerLink="/product" routerLinkActive="active">{{ 'header.product' | translate }}</a>
+				<a routerLink="/market-impact" routerLinkActive="active">{{ 'header.impact' | translate }}</a>
 				<!-- <a routerLink="/news" routerLinkActive="active">News</a> -->
 				<!-- <a routerLink="/contact-us" routerLinkActive="active">Contact Us</a> -->
 			</nav>
 		</div>
+		  
 	
 		<div class="right">
-			<a class="contact-button" routerLink="/contact-us">Contact Us</a>
+			<a class="contact-button" routerLink="/contact-us">{{ 'header.contact' | translate }}</a>
 			<!-- <a class="contact-button" routerLink="/start-project">Start Project</a> -->
+			<div class="language-switcher mx-2">
+				<select (change)="switchLang($event)" [(ngModel)]="selectedLanguage">
+					<option *ngFor="let lang of languages" [value]="lang.value" [hidden]="lang.value === selectedLanguage">
+					  {{ lang.label }}
+					</option>
+				</select>
+			</div>
+			  
 		</div>
 	</div>
 </header>
-
-
-
-
-
-
-
-<!-- <main>
-	<div style="height: 2000px; padding: 2rem;">
-	Scroll to see the sticky header effect in action.
-	</div>
-</main> -->
-
-
-
-<!-- <div #topBar class="top-bar">
-	Welcome to our elegant site!
-</div>
-
-<header class="main-header" [class.sticky]="!topBarVisible">
-	<nav>
-	<h1>Brand</h1>
-	<ul>
-		<li><a routerLink="/">Home</a></li>
-		<li><a routerLink="/services">Services</a></li>
-		<li><a routerLink="/contact">Contact</a></li>
-	</ul>
-	</nav>
-</header>
-
-<main>
-	<div style="height: 2000px; padding: 2rem;">
-	Scroll to see the header change background as the top bar scrolls out.
-	</div>
-</main> -->

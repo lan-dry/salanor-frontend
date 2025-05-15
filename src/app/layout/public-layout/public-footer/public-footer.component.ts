@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-public-footer',
 	imports: [
-		CommonModule, RouterModule
+		CommonModule, RouterModule, TranslateModule
 	],
 	templateUrl: './public-footer.component.html',
 	styleUrl: './public-footer.component.scss'

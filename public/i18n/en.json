@@ -1,0 +1,163 @@
+{
+	"header": {
+		"home": "Home",
+		"about": "About Us",
+		"product": "Product",
+		"impact": "Impact",
+		"contact": "Contact Us"
+	},
+	"footer": {
+		"company_description": "Your trusted partner in innovation and service excellence. We deliver tailored solutions with a personal touch.",
+		"quick_links": "Quick Links",
+		"home": "Home",
+		"about": "About Us",
+		"product": "Product",
+		"impact": "Market Impact",
+		"news": "News",
+		"contact": "Contact Us",
+		"contact_title": "Contact",
+		"email": "Email",
+		"follow_us": "Follow Us",
+		"copyright": "© 2025 SALANOR. All rights reserved."
+	},
+	"home": {
+		"shaping_tomorrow": "Shaping Tomorrow",
+		"salanor_belief": "At Salanor, we believe in the power of technology to elevate human experience.",
+		"power_of_technology": "We create innovative solutions...",
+		"create_innovative_solutions": "that connect, empower, and enrich lives across health, smart cities, and beyond.",
+		"learn_more": "Learn More",
+		"building_tech_future": "Building the Future of Tech",
+		"empowering_innovation": "Empowering innovation through scalable, intelligent, and elegant software solutions.",
+		"get_in_touch": "Get in Touch",
+		"meet_aether": "Meet Aether",
+		"aether": "Aether",
+		"portable_air_quality": "is our flagship product — a portable, real-time air quality monitor",
+		"tracks_pollutants": "It tracks pollutants like PM2.5, CO₂, VOCs and more",
+		"providing_data": "providing instant data through an intuitive mobile app.",
+		"affordable_portable_user_friendly": "Designed to be affordable, portable, and user-friendly",
+		"explore_aether": "Explore Aether",
+		"aether_compact_intelligent": "Aether – Compact, Intelligent, Powerful",
+		"why_aether": "Why Aether?",
+		"global_awareness": "Global Awareness",
+		"track_pollution": "Track pollution anywhere, anytime...",
+		"real_time_data": "Real-Time Data",
+		"actionable_insights": "Instant, actionable air quality insights...",
+		"ai_powered_recommendations": "AI-Powered Recommendations",
+		"smart_suggestions": "Get smart suggestions to improve indoor and outdoor air quality",
+		"designed_for_mobility": "Designed for Mobility",
+		"lightweight_portable": "Aether is lightweight, portable, and always ready to travel with you.",
+		"trusted_by_innovators": "Trusted by Innovators and Citizens",
+		"making_air_quality_visible": "From urban explorers to schools and health-conscious families — Aether is making air quality visible and actionable.",
+		"cleanest_route": "Aether helped us identify the cleanest route to school",
+		"morning_routine": "it’s now part of our morning routine.",
+		"parent_london": "Parent, London",
+		"use_in_classroom": "We now use Aether in every classroom.",
+		"kids_awareness": "Kids are more aware, and asthma incidents have decreased.",
+		"school_admin_san_francisco": "School Administrator, San Francisco",
+		"build_smarter_future": "Let's Build a Healthier, Smarter Future Together",
+		"partner_with_salanor": "Partner with Salanor to create scalable, intelligent solutions...",
+		"contact_us": "Contact Us",
+		"clients_say": "What our clients say",
+		"trust_salanor": "Hear directly from the people who trust SALANOR to deliver results.",
+		"salanor_transformed": "Salanor has transformed how we operate. Their team is attentive, innovative, and truly committed to our success.",
+		"professional_responsive": "Professional, responsive, and results-driven. Working with Salanor has been a pleasure from start to finish.",
+		"measurable_improvement": "We’ve seen measurable improvement since partnering with Salanor. Highly recommended for any serious business."
+	},
+	"about": {
+		"title": "About Salanor",
+		"description": "Reimagining the future with technology, sustainability, and human wellbeing at heart.",
+		"mission_title": "Our Mission",
+		"mission_description": "To build intelligent, sustainable technologies that improve lives; blending AI, IoT, and human insight to power healthier communities, smarter cities, and a more conscious world.",
+		"vision_title": "Our Vision",
+		"vision_description": "To create a world where technology amplifies human potential, a future where intelligence serves humanity with purpose, compassion, and impact.",
+		"cta_title": "We’re Just Getting Started",
+		"cta_description": "Join us on our mission to make technology more human, helpful, and harmonious.",
+		"cta_button": "Work With Us",
+		"values_title": "Our Core Values",
+		"values_description": "To create intelligent, elegant technologies that empower people to live healthier, smarter, and more connected lives.",
+		"value_sustainability_title": "Sustainability",
+		"value_sustainability_description": "We design with the planet in mind — promoting clean air, energy awareness, and responsible tech.",
+		"value_human_centered_title": "Human-Centered",
+		"value_human_centered_description": "Technology should adapt to people, not the other way around. Our products start with empathy.",
+		"value_innovation_title": "Innovation",
+		"value_innovation_description": "We don’t follow trends — we create what's next, leveraging AI, IoT, and thoughtful design.",
+		"value_global_impact_title": "Global Impact",
+		"value_global_impact_description": "From individuals to entire cities, our work scales to drive real-world change everywhere."
+	},
+	"market_impact": {
+		"header": "Market & Impact",
+		"subheader": "Tackling the global air quality crisis through accessible innovation",
+		"stats": {
+			"death": "deaths annually linked to air pollution",
+			"air_quality": "of the world breathes air exceeding WHO limits",
+			"cost": "annual economic cost from pollution-related health issues",
+			"access": "urban residents lack access to real-time air quality data"
+		},
+		"who_affects_title": "Who It Affects & Why It Matters",
+		"who_affects": {
+			"children": "Children & Elderly – vulnerable to long-term respiratory and cognitive damage",
+			"workers": "Urban Workers – daily exposure lowers productivity and well-being",
+			"countries": "Developing Countries – limited infrastructure for monitoring or prevention",
+			"policy": "Policy Makers & NGOs – need accessible tools to inform interventions"
+		},
+		"approach_title": "Salanor’s Unique Approach",
+		"approach_description": "At Salanor, we combine AI, IoT, and human-centered design to empower people with real-time, actionable air quality data.",
+		"approach_items": {
+			"device": "Portable and affordable monitoring devices",
+			"mobile": "Mobile-first, user-friendly experience",
+			"ai": "AI-driven insights to guide decisions and reduce exposure"
+		}
+	},
+	"product": {
+		"title": "Meet Aether",
+		"description": "The portable air quality monitor that empowers you with real-time environmental data. Breathe smarter, live better.",
+		"cta": "Join Waitlist",
+		"features_title": "Features & Specifications",
+		"feature_1": {
+			"title": "Comprehensive Sensing",
+			"description": "Tracks PM2.5, CO₂, VOCs, temperature & humidity in real time."
+		},
+		"feature_2": {
+			"title": "Mobile App",
+			"description": "Seamless iOS and Android integration for real-time data and insights."
+		},
+		"feature_3": {
+			"title": "Portable Design",
+			"description": "Compact and travel-friendly—perfect for life on the go."
+		},
+		"feature_4": {
+			"title": "USB-C & Long Battery",
+			"description": "Reliable power with modern USB-C charging and extended battery life."
+		},
+		"feature_5": {
+			"title": "AI Insights",
+			"description": "Get personalized health and environmental guidance powered by AI."
+		},
+		"why_title": "Why Aether Matters",
+		"why_health": {
+			"title": "Health",
+			"description": "Stay informed about your environment to prevent respiratory issues and allergies."
+		},
+		"why_productivity": {
+			"title": "Productivity",
+			"description": "Monitor indoor air quality to improve focus, comfort, and energy levels at work or home."
+		},
+		"why_environment": {
+			"title": "Environment",
+			"description": "Make data-driven choices that reduce exposure and environmental impact."
+		},
+		"use_cases_title": "Use Cases",
+		"use_case_home": "Home & Family",
+		"use_case_office": "Offices & Co-working",
+		"use_case_travel": "Travel & Outdoors",
+		"use_case_ngo": "NGOs & Public Sector",
+		"video_title": "See Aether in Action",
+		"video_description": "Watch how Aether helps users understand their air and take meaningful action.",
+		"cta_preorder": "Pre-order Now",
+		"waitlist_title": "Be the first to know when Aether launches",
+		"waitlist_description": "Join our waitlist and get early access, updates, and exclusive offers.",
+		"cta_notify": "Notify Me",
+		"form_placeholder": "Your email address"
+  	}
+}
+  

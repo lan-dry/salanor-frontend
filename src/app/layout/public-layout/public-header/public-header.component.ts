@@ -1,14 +1,17 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, ElementRef, HostBinding, HostListener, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostBinding, HostListener, inject, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 // import { Direction } from 'readline';
 import { fromEvent, throttleTime, map, pairwise, distinctUntilChanged, share, filter } from 'rxjs';
+import { LanguageService } from '../../../core/services/language.service';
+import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
 	selector: 'app-public-header',
 	imports: [
-		CommonModule, RouterModule
+		CommonModule, RouterModule, FormsModule, TranslateModule
 	],
 	templateUrl: './public-header.component.html',
 	styleUrl: './public-header.component.scss',
@@ -34,6 +37,12 @@ export class PublicHeaderComponent {
 
 
 	isScrolled = false;
+	private languageService = inject(LanguageService);
+	languages = [
+		{ value: 'fr', label: 'FR' },
+		{ value: 'en', label: 'EN' },
+		{ value: 'es', label: 'ES' }
+	];
 
 	@HostListener('window:scroll', [])
 	onWindowScroll() {
@@ -41,6 +50,14 @@ export class PublicHeaderComponent {
 	}
 
 	menuOpen = false;
+	selectedLanguage!: string;
+
+	ngOnInit(): void {
+		this.languageService.currentLang$.subscribe((lang) =>{
+			console.log(lang);
+			this.selectedLanguage = lang;
+		})
+	}
 
 	toggleMenu() {
 		this.menuOpen = !this.menuOpen;
@@ -48,9 +65,16 @@ export class PublicHeaderComponent {
 
 	isSidebarOpen = false;
 
-  toggleSidebar() {
-    this.isSidebarOpen = !this.isSidebarOpen;
-  }
+	toggleSidebar() {
+		this.isSidebarOpen = !this.isSidebarOpen;
+	}
+
+	switchLang(lang: any) {
+		// this.translate.use(lang);
+		// console.log(this.selectedLanguage)
+		this.languageService.switchLanguage(this.selectedLanguage);
+	}
+	  
   
 	
 	// topBarVisible = true;

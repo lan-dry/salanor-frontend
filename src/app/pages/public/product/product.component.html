@@ -1,54 +1,108 @@
-<!-- aether.component.html -->
 <div class="container py-5">
 	<div class="row align-items-center mb-5">
 		<div class="col-md-6">
-			<h1 class="display-4 fw-bold text-primary">Meet Aether</h1>
+			<h1 class="display-4 fw-bold text-primary">{{ 'product.title' | translate }}</h1>
 			<p class="lead text-muted">
-				The portable air quality monitor that empowers you with real-time environmental data. Breathe smarter, live better.
+				{{ 'product.description' | translate }}
 			</p>
-			<button class="btn btn-outline-primary btn-lg mt-3" (click)="scrollToForm()">Join Waitlist</button>
+			<button class="btn btn-outline-primary btn-lg mt-3" (click)="scrollToForm()">{{ 'product.cta' | translate }}</button>
 		</div>
 		<div class="col-md-6 text-center">
-			<!-- <img src="imgs/aether-gray.png" alt="Aether Device" class="img-fluid rounded shadow-lg"> -->
 			<img src="imgs/aether-gray.png" alt="Aether Device" height="60%" width="20%" class="img-fluid">
 		</div>
 	</div>
 
 	<div class="row mb-5">
 		<div class="col-12">
-			<h2 class="fw-bold text-secondary mb-4">Features & Specifications</h2>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">✅ Tracks PM2.5, CO₂, VOCs, temperature & humidity</li>
-				<li class="list-group-item">✅ Real-time data via mobile app (iOS/Android)</li>
-				<li class="list-group-item">✅ Compact & travel-friendly design</li>
-				<li class="list-group-item">✅ Long battery life with USB-C charging</li>
-				<li class="list-group-item">✅ AI-powered health & environmental insights</li>
-			</ul>
+			<h2 class="fw-bold text-secondary mb-4">{{ 'product.features_title' | translate }}</h2>
 		</div>
-	</div>
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100 border-0 shadow-sm text-center p-3">
+				<div class="card-body">
+					<img src="icons/detector.svg" alt="Sensor Icon" width="40" class="mb-3">
+					<h6 class="fw-semibold">{{ 'product.feature_1.title' | translate }}</h6>
+					<p class="text-muted small mb-0">{{ 'product.feature_1.description' | translate }}</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100 border-0 shadow-sm text-center p-3">
+				<div class="card-body">
+					<img src="icons/mobile-app.svg" alt="App Icon" width="40" class="mb-3">
+					<h6 class="fw-semibold">{{ 'product.feature_2.title' | translate }}</h6>
+					<p class="text-muted small mb-0">{{ 'product.feature_2.description' | translate }}</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100 border-0 shadow-sm text-center p-3">
+				<div class="card-body">
+					<img src="icons/compact.svg" alt="Compact Design Icon" width="40" class="mb-3">
+					<h6 class="fw-semibold">{{ 'product.feature_3.title' | translate }}</h6>
+					<p class="text-muted small mb-0">{{ 'product.feature_3.description' | translate }}</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100 border-0 shadow-sm text-center p-3">
+				<div class="card-body">
+					<img src="icons/battery.svg" alt="Battery Icon" width="40" class="mb-3">
+					<h6 class="fw-semibold">{{ 'product.feature_4.title' | translate }}</h6>
+					<p class="text-muted small mb-0">{{ 'product.feature_4.description' | translate }}</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100 border-0 shadow-sm text-center p-3">
+				<div class="card-body">
+					<img src="icons/ai.svg" alt="AI Insights Icon" width="40" class="mb-3">
+					<h6 class="fw-semibold">{{ 'product.feature_5.title' | translate }}</h6>
+					<p class="text-muted small mb-0">{{ 'product.feature_5.description' | translate }}</p>
+				</div>
+			</div>
+		</div>
+	</div>	
 
 	<div class="row mb-5">
-		<div class="col-md-4">
+		<div class="col-12 mb-4">
+			<h2 class="fw-bold text-secondary">{{ 'product.why_title' | translate }}</h2>
+			<p class="text-muted">{{ 'product.why_health.description' | translate }}</p>
+		</div>
+		
+		<div class="col-md-4 mb-4">
 			<div class="card h-100 border-0 shadow-sm">
 				<div class="card-body">
-					<h5 class="card-title fw-semibold">Health</h5>
-					<p class="card-text">Stay informed about your environment to prevent respiratory issues and allergies.</p>
+					<h5 class="card-title fw-semibold">
+						<i class="fa-solid fa-heart-pulse text-danger me-2"></i>{{ 'product.why_health.title' | translate }}
+					</h5>
+					<p class="card-text">{{ 'product.why_health.description' | translate }}</p>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		
+		<div class="col-md-4 mb-4">
 			<div class="card h-100 border-0 shadow-sm">
 				<div class="card-body">
-					<h5 class="card-title fw-semibold">Productivity</h5>
-					<p class="card-text">Monitor indoor air quality to improve focus, comfort, and energy levels at work or home.</p>
+					<h5 class="card-title fw-semibold">
+						<i class="fa-solid fa-bolt text-warning me-2"></i>{{ 'product.why_productivity.title' | translate }}
+					</h5>
+					<p class="card-text">{{ 'product.why_productivity.description' | translate }}</p>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		
+		<div class="col-md-4 mb-4">
 			<div class="card h-100 border-0 shadow-sm">
 				<div class="card-body">
-					<h5 class="card-title fw-semibold">Environment</h5>
-					<p class="card-text">Make data-driven choices that reduce exposure and environmental impact.</p>
+					<h5 class="card-title fw-semibold">
+						<i class="fa-solid fa-leaf text-success me-2"></i>{{ 'product.why_environment.title' | translate }}
+					</h5>
+					<p class="card-text">{{ 'product.why_environment.description' | translate }}</p>
 				</div>
 			</div>
 		</div>
@@ -56,31 +110,31 @@
 
 	<div class="row mb-5">
 		<div class="col-12">
-			<h2 class="fw-bold text-secondary mb-4">Use Cases</h2>
+			<h2 class="fw-bold text-secondary mb-4">{{ 'product.use_cases_title' | translate }}</h2>
 		</div>
 		<div class="col-md-3 col-sm-6 mb-4">
 			<div class="text-center">
 				<img src="imgs/home-icon.svg" class="mb-2" alt="Home" width="60">
 				<i class="fa-solid fa-house"></i>
-				<p class="fw-medium">Home & Family</p>
+				<p class="fw-medium">{{ 'product.use_case_home' | translate }}</p>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6 mb-4">
 			<div class="text-center">
 				<img src="imgs/coworking.svg" class="mb-2" alt="Office" width="60">
-				<p class="fw-medium">Offices & Co-working</p>
+				<p class="fw-medium">{{ 'product.use_case_office' | translate }}</p>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6 mb-4">
 			<div class="text-center">
 				<img src="imgs/jogging.svg" class="mb-2" alt="Travel" width="60">
-				<p class="fw-medium">Travel & Outdoors</p>
+				<p class="fw-medium">{{ 'product.use_case_travel' | translate }}</p>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6 mb-4">
 			<div class="text-center">
 				<img src="imgs/ngo.svg" class="mb-2" alt="NGOs & Governments" width="60">
-				<p class="fw-medium">NGOs & Public Sector</p>
+				<p class="fw-medium">{{ 'product.use_case_ngo' | translate }}</p>
 			</div>
 		</div>
 	</div>
@@ -93,27 +147,23 @@
 		</div>
 		<div class="col-md-6 d-flex align-items-center">
 			<div>
-				<h3 class="fw-bold">See Aether in Action</h3>
-				<p>Watch how Aether helps users understand their air and take meaningful action.</p>
-				<button class="btn btn-primary btn-lg mt-2" (click)="onPreOrderClick()">Pre-order Now</button>
+				<h3 class="fw-bold">{{ 'product.video_title' | translate }}</h3>
+				<p>{{ 'product.video_description' | translate }}</p>
+				<button class="btn btn-primary btn-lg mt-2" (click)="onPreOrderClick()">{{ 'product.cta_preorder' | translate }}</button>
 			</div>
 		</div>
 	</div>
 
 	<div class="text-center py-5 border-top" id="waitlist-form">
-		<h4 class="fw-bold">Be the first to know when Aether launches</h4>
-		<p class="text-muted">Join our waitlist and get early access, updates, and exclusive offers.</p>
+		<h4 class="fw-bold">{{ 'product.waitlist_title' | translate }}</h4>
+		<p class="text-muted">{{ 'product.waitlist_description' | translate }}</p>
 		<form class="row g-3 justify-content-center" (ngSubmit)="onSubmitEmail(emailForm)" #emailForm="ngForm">
 			<div class="col-md-4">
-				<input type="email" name="email" required ngModel class="form-control" placeholder="Your email address">
+				<input type="email" name="email" required ngModel class="form-control" placeholder="{{ 'product.form_placeholder' | translate }}">
 			</div>
 			<div class="col-md-2">
-				<!-- <button type="submit" class="btn btn-outline-secondary w-100">
-					Notify Me
-					<mat-spinner *ngIf="!loading" diameter="20" strokeWidth="3"></mat-spinner>
-				</button> -->
 				<button type="submit" class="btn btn-outline-secondary w-100" [disabled]="emailForm.invalid || loading" style="display: flex; align-items: center; justify-content: center;">
-					<span>Notify Me</span>
+					<span>{{ 'product.cta_notify' | translate }}</span>
 					<mat-spinner *ngIf="loading" diameter="20" strokeWidth="3" style="margin-left: 10px;"></mat-spinner>
 				</button>				  
 			</div>

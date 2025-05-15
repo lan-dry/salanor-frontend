@@ -1,0 +1,163 @@
+{
+	"header": {
+		"home": "Inicio",
+		"about": "Sobre nosotros",
+		"product": "Producto",
+		"impact": "Impacto",
+		"contact": "Contáctenos"
+	},
+	"footer": {
+		"company_description": "Tu socio de confianza en innovación y excelencia en el servicio. Ofrecemos soluciones personalizadas con un toque humano.",
+		"quick_links": "Enlaces rápidos",
+		"home": "Inicio",
+		"about": "Sobre nosotros",
+		"product": "Producto",
+		"impact": "Impacto en el mercado",
+		"news": "Noticias",
+		"contact": "Contáctanos",
+		"contact_title": "Contacto",
+		"email": "Correo electrónico",
+		"follow_us": "Síguenos",
+		"copyright": "© 2025 SALANOR. Todos los derechos reservados."
+	},
+	"home": {
+		"shaping_tomorrow": "Dando forma al mañana",
+		"salanor_belief": "En Salanor, creemos en el poder de la tecnología para elevar la experiencia humana.",
+		"power_of_technology": "Creamos soluciones innovadoras que conectan, empoderan y enriquecen vidas en salud, ciudades inteligentes y más allá.",
+		"create_innovative_solutions": "A través de IA de vanguardia, IoT e innovación sostenible, estamos construyendo un futuro donde la tecnología trabaja en armonía con la humanidad para crear un mundo más inteligente, saludable y sostenible.",
+		"learn_more": "Saber más",
+		"building_tech_future": "Construyendo el futuro de la tecnología",
+		"empowering_innovation": "Empoderando la innovación mediante soluciones de software escalables, inteligentes y elegantes.",
+		"get_in_touch": "Ponte en contacto",
+		"meet_aether": "Conoce Aether",
+		"aether": "Aether",
+		"portable_air_quality": "es nuestro producto insignia: un monitor portátil de calidad del aire en tiempo real",
+		"tracks_pollutants": "Rastrea contaminantes como PM2.5, CO₂, COV y más",
+		"providing_data": "proporcionando datos instantáneos a través de una aplicación móvil intuitiva.",
+		"affordable_portable_user_friendly": "Diseñado para ser asequible, portátil y fácil de usar",
+		"explore_aether": "Explora Aether",
+		"aether_compact_intelligent": "Aether – Compacto, Inteligente, Poderoso",
+		"why_aether": "¿Por qué Aether?",
+		"global_awareness": "Conciencia global",
+		"track_pollution": "Rastrea la contaminación en cualquier lugar, en cualquier momento, empoderando decisiones más saludables y basadas en datos en todo el mundo.",
+		"real_time_data": "Datos en tiempo real",
+		"actionable_insights": "Perspectivas instantáneas y accionables de la calidad del aire entregadas a tu aplicación móvil conectada.",
+		"ai_powered_recommendations": "Recomendaciones impulsadas por IA",
+		"smart_suggestions": "Obtén sugerencias inteligentes para mejorar la calidad del aire interior y exterior basadas en datos en vivo.",
+		"designed_for_mobility": "Diseñado para la movilidad",
+		"lightweight_portable": "Aether es ligero, portátil y siempre listo para viajar contigo.",
+		"trusted_by_innovators": "Confiado por innovadores y ciudadanos",
+		"making_air_quality_visible": "Desde exploradores urbanos hasta escuelas y familias preocupadas por la salud, Aether está haciendo que la calidad del aire sea visible y procesable.",
+		"cleanest_route": "Aether nos ayudó a identificar la ruta más limpia para ir al colegio — ahora forma parte de nuestra rutina matutina.",
+		"morning_routine": "ahora forma parte de nuestra rutina matutina.",
+		"parent_london": "Padre, Londres",
+		"use_in_classroom": "Ahora usamos Aether en cada aula. Los niños son más conscientes y los incidentes de asma han disminuido.",
+		"kids_awareness": "Los niños son más conscientes y los incidentes de asma han disminuido.",
+		"school_admin_san_francisco": "Administrador escolar, San Francisco",
+		"build_smarter_future": "Construyamos juntos un futuro más saludable e inteligente",
+		"partner_with_salanor": "Asóciate con Salanor para crear soluciones escalables e inteligentes, comenzando con aire limpio.",
+		"contact_us": "Contáctanos",
+		"clients_say": "Lo que dicen nuestros clientes",
+		"trust_salanor": "Escucha directamente de las personas que confían en SALANOR para obtener resultados.",
+		"salanor_transformed": "Salanor ha transformado la forma en que operamos. Su equipo es atento, innovador y verdaderamente comprometido con nuestro éxito.",
+		"professional_responsive": "Profesionales, receptivos y orientados a resultados. Trabajar con Salanor ha sido un placer desde el principio hasta el final.",
+		"measurable_improvement": "Hemos visto una mejora significativa desde que nos asociamos con Salanor. Muy recomendado para cualquier negocio serio."
+	},
+	"about": {
+		"title": "Sobre Salanor",
+		"description": "Reimaginar el futuro con tecnología, sostenibilidad y el bienestar humano en el corazón.",
+		"mission_title": "Nuestra Misión",
+		"mission_description": "Crear tecnologías inteligentes y sostenibles que mejoren las vidas; combinando IA, IoT y conocimiento humano para potenciar comunidades más saludables, ciudades más inteligentes y un mundo más consciente.",
+		"vision_title": "Nuestra Visión",
+		"vision_description": "Crear un mundo donde la tecnología amplifique el potencial humano, un futuro donde la inteligencia sirva a la humanidad con propósito, compasión e impacto.",
+		"cta_title": "Apenas Estamos Comenzando",
+		"cta_description": "Únete a nuestra misión para hacer la tecnología más humana, útil y armónica.",
+		"cta_button": "Trabaja Con Nosotros",
+		"values_title": "Nuestros Valores Fundamentales",
+		"values_description": "Crear tecnologías inteligentes y elegantes que permitan a las personas vivir de manera más saludable, inteligente y conectada.",
+		"value_sustainability_title": "Sostenibilidad",
+		"value_sustainability_description": "Diseñamos pensando en el planeta: promoviendo aire limpio, conciencia energética y tecnología responsable.",
+		"value_human_centered_title": "Centrado en el Humano",
+		"value_human_centered_description": "La tecnología debe adaptarse a las personas, no al revés. Nuestros productos comienzan con empatía.",
+		"value_innovation_title": "Innovación",
+		"value_innovation_description": "No seguimos las tendencias, creamos lo siguiente, aprovechando la IA, el IoT y el diseño reflexivo.",
+		"value_global_impact_title": "Impacto Global",
+		"value_global_impact_description": "Desde individuos hasta ciudades enteras, nuestro trabajo escala para generar cambios reales en todas partes."
+	},
+	"market_impact": {
+		"header": "Mercado e Impacto",
+		"subheader": "Abordando la crisis global de la calidad del aire a través de la innovación accesible",
+		"stats": {
+			"death": "muertes anuales relacionadas con la contaminación del aire",
+			"air_quality": "de la población mundial respira aire que excede los límites de la OMS",
+			"cost": "costo económico anual derivado de problemas de salud por contaminación",
+			"access": "habitantes urbanos sin acceso a datos en tiempo real sobre la calidad del aire"
+		},
+		"who_affects_title": "A quién afecta y por qué importa",
+		"who_affects": {
+			"children": "Niños y ancianos – vulnerables a daños respiratorios y cognitivos a largo plazo",
+			"workers": "Trabajadores urbanos – la exposición diaria reduce la productividad y el bienestar",
+			"countries": "Países en desarrollo – infraestructura limitada para monitoreo o prevención",
+			"policy": "Responsables políticos y ONG – necesitan herramientas accesibles para tomar decisiones"
+		},
+		"approach_title": "El enfoque único de Salanor",
+		"approach_description": "En Salanor combinamos IA, IoT y diseño centrado en el ser humano para empoderar a las personas con datos accionables en tiempo real sobre la calidad del aire.",
+		"approach_items": {
+			"device": "Dispositivos de monitoreo portátiles y asequibles",
+			"mobile": "Experiencia fácil de usar centrada en móviles",
+			"ai": "Análisis impulsados por IA para guiar decisiones y reducir la exposición"
+		}
+	},
+	"product": {
+		"title": "Conoce Aether",
+		"description": "El monitor portátil de calidad del aire que te brinda datos ambientales en tiempo real. Respira de manera más inteligente, vive mejor.",
+		"cta": "Unirse a la lista de espera",
+		"features_title": "Características y especificaciones",
+		"feature_1": {
+			"title": "Detección completa",
+			"description": "Monitorea PM2.5, CO₂, COV, temperatura y humedad en tiempo real."
+		},
+		"feature_2": {
+			"title": "Aplicación móvil",
+			"description": "Integración fluida con iOS y Android para datos e información en tiempo real."
+		},
+		"feature_3": {
+			"title": "Diseño portátil",
+			"description": "Compacto y fácil de transportar: perfecto para la vida en movimiento."
+		},
+		"feature_4": {
+			"title": "USB-C y batería de larga duración",
+			"description": "Energía confiable con carga USB-C moderna y larga duración de la batería."
+		},
+		"feature_5": {
+			"title": "Información impulsada por IA",
+			"description": "Obtén orientación personalizada sobre salud y medio ambiente impulsada por IA."
+		},
+		"why_title": "Por qué Aether es importante",
+		"why_health": {
+			"title": "Salud",
+			"description": "Mantente informado sobre tu entorno para prevenir problemas respiratorios y alergias."
+		},
+		"why_productivity": {
+			"title": "Productividad",
+			"description": "Monitorea la calidad del aire interior para mejorar la concentración, comodidad y energía en el trabajo o en casa."
+		},
+		"why_environment": {
+			"title": "Medio ambiente",
+			"description": "Toma decisiones basadas en datos para reducir la exposición y el impacto ambiental."
+		},
+		"use_cases_title": "Casos de uso",
+		"use_case_home": "Hogar y familia",
+		"use_case_office": "Oficinas y co-working",
+		"use_case_travel": "Viajes y aire libre",
+		"use_case_ngo": "ONG y sector público",
+		"video_title": "Ver Aether en acción",
+		"video_description": "Mira cómo Aether ayuda a los usuarios a comprender su aire y tomar medidas significativas.",
+		"cta_preorder": "Preordenar ahora",
+		"waitlist_title": "Sé el primero en saber cuándo se lanza Aether",
+		"waitlist_description": "Únete a nuestra lista de espera y obtén acceso anticipado, actualizaciones y ofertas exclusivas.",
+		"cta_notify": "Notificarme",
+		"form_placeholder": "Tu dirección de correo electrónico"
+  	}
+}
+  

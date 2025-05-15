@@ -1,17 +1,17 @@
 <section class="vision">
 	<div class="vision-container">
 		<div class="vision-text">
-			<h2><strong>Shaping Tomorrow</strong></h2>
+			<h2><strong>{{ 'home.shaping_tomorrow' | translate }}</strong></h2>
 			<p>
-				At <b>Salanor</b>, we believe in the power of technology to elevate human experience. 
-				We create innovative solutions that connect, empower, and enrich lives across health, smart cities, and beyond. Through cutting-edge AI, IoT, 
-				and sustainable innovation, we are building a future where technology works in harmony with humanity to create a smarter, healthier, and more sustainable world.
+				{{ 'home.salanor_belief' | translate }} <b>{{ 'home.salanor' | translate }}</b>, {{ 'home.power_of_technology' | translate }}. 
+				{{ 'home.create_innovative_solutions' | translate }} {{ 'home.health_smart_cities' | translate }}. 
+				{{ 'home.building_future' | translate }} {{ 'home.harmony_with_humanity' | translate }}.
 			</p>
 			<!-- <p>
-				At <b>Salanor</b>, we envision a future where technology empowers every idea — fast, securely, and beautifully.
-				Our platform bridges innovation and execution with elegance and scale.
+				{{ 'home.salanor_vision' | translate }}
+				{{ 'home.platform_bridges_innovation' | translate }}
 			</p> -->
-			<a routerLink="/about-us" class="learn-more">Learn More</a>
+			<a routerLink="/about-us" class="learn-more">{{ 'home.learn_more' | translate }}</a>
 		</div>
 
 		<div class="vision-image">
@@ -19,27 +19,27 @@
 		</div>
 	</div>
 </section>
-  
+
 <section class="section hero">
 	<div class="content">
-		<h1>Building the Future of Tech</h1>
-		<p>Empowering innovation through scalable, intelligent, and elegant software solutions.</p>
-		<a routerLink="/contact-us" class="cta bg-secondary">Get in Touch</a>
+		<h1>{{ 'home.building_tech_future' | translate }}</h1>
+		<p>{{ 'home.empowering_innovation' | translate }}</p>
+		<a routerLink="/contact-us" class="cta bg-secondary">{{ 'home.get_in_touch' | translate }}</a>
 	</div>
 </section>
 
 <!-- AETHER INTRO SECTION -->
 <section class="section product-highlight" style="background-color: wheat;">
 	<div class="content">
-		<h2>Meet Aether</h2>
+		<h2>{{ 'home.meet_aether' | translate }}</h2>
 		<p>
-			<b>Aether</b> is our flagship product — a portable, real-time air quality monitor built to empower individuals and organizations with clean air insights. 
-			It tracks pollutants like PM2.5, CO₂, VOCs and more, providing instant data through an intuitive mobile app.
+			<b>{{ 'home.aether' | translate }}</b> {{ 'home.portable_air_quality' | translate }}. 
+			{{ 'home.tracks_pollutants' | translate }} PM2.5, CO₂, VOCs {{ 'home.providing_data' | translate }}.
 		</p>
 		<p>
-			Designed to be affordable, portable, and user-friendly, Aether makes air quality monitoring accessible for everyone — at home, at work, or on the move.
+			{{ 'home.affordable_portable_user_friendly' | translate }}
 		</p>
-		<a routerLink="/about" class="learn-more">Explore Aether</a>
+		<a routerLink="/about" class="learn-more">{{ 'home.explore_aether' | translate }}</a>
 	</div>
 	<div class="images row">
 		<div class="col-md-6 col-xs-6">
@@ -48,86 +48,69 @@
 		<div class="col-md-6 col-xs-6">
 			<img src="imgs/aether.png" alt="Aether In Use">
 		</div>
-		<p class="caption">Aether – Compact, Intelligent, Powerful</p>
-		
+		<p class="caption">{{ 'home.aether_compact_intelligent' | translate }}</p>
 	</div>
 </section>
 
 <!-- WHY AETHER SECTION -->
 <div class="row bg-white pt-4 text-center" style="width: 100%;">
-	<h2>Why Aether?</h2>
+	<h2>{{ 'home.why_aether' | translate }}</h2>
 </div>
 <section class="section features alt">
 	<div class="feature-card">
 		<div class="icon">🌍</div>
-		<h3>Global Awareness</h3>
-		<p>Track pollution anywhere, anytime — empowering healthier, data-driven decisions worldwide.</p>
+		<h3>{{ 'home.global_awareness' | translate }}</h3>
+		<p>{{ 'home.track_pollution' | translate }}</p>
 	</div>
 	<div class="feature-card">
 		<div class="icon">📱</div>
-		<h3>Real-Time Data</h3>
-		<p>Instant, actionable air quality insights delivered to your connected mobile app.</p>
+		<h3>{{ 'home.real_time_data' | translate }}</h3>
+		<p>{{ 'home.actionable_insights' | translate }}</p>
 	</div>
 	<div class="feature-card">
 		<div class="icon">🧠</div>
-		<h3>AI-Powered Recommendations</h3>
-		<p>Get smart suggestions to improve indoor and outdoor air quality based on live data.</p>
+		<h3>{{ 'home.ai_powered_recommendations' | translate }}</h3>
+		<p>{{ 'home.smart_suggestions' | translate }}</p>
 	</div>
 	<div class="feature-card">
 		<div class="icon">🚶</div>
-		<h3>Designed for Mobility</h3>
-		<p>Aether is lightweight, portable, and always ready to travel with you.</p>
+		<h3>{{ 'home.designed_for_mobility' | translate }}</h3>
+		<p>{{ 'home.lightweight_portable' | translate }}</p>
 	</div>
 </section>
 
-<!-- PRODUCT IMAGE OR DEMO (OPTIONAL) -->
-<!-- <section class="section product-visual">
-	<div class="content center">
-		<img src="imgs/aether-device.png" alt="Aether Device Showcase" />
-		<p class="caption">Aether – Compact, Intelligent, Powerful</p>
-	</div>
-</section> -->
-  
-
 <!-- TESTIMONIAL / IMPACT SECTION -->
 <section class="section testimonials" *ngIf="false">
-	<h2>Trusted by Innovators and Citizens</h2>
+	<h2>{{ 'home.trusted_by_innovators' | translate }}</h2>
 	<p>
-		From urban explorers to schools and health-conscious families — Aether is making air quality visible and actionable.
+		{{ 'home.making_air_quality_visible' | translate }}
 	</p>
 	<div class="testimonial-card">
-		<p>“Aether helped us identify the cleanest route to school — it’s now part of our morning routine.”</p>
-		<span>— Parent, London</span>
+		<p>“{{ 'home.cleanest_route' | translate }} — {{ 'home.morning_routine' | translate }}.”</p>
+		<span>— {{ 'home.parent_london' | translate }}</span>
 	</div>
 	<div class="testimonial-card">
-		<p>“We now use Aether in every classroom. Kids are more aware, and asthma incidents have decreased.”</p>
-		<span>— School Administrator, San Francisco</span>
+		<p>“{{ 'home.use_in_classroom' | translate }}. {{ 'home.kids_awareness' | translate }}.”</p>
+		<span>— {{ 'home.school_admin_san_francisco' | translate }}</span>
 	</div>
 </section>
 
 <!-- CTA SECTION -->
 <section class="section cta-block">
-	<h2>Let's Build a Healthier, Smarter Future Together</h2>
-	<p>Partner with Salanor to create scalable, intelligent solutions — starting with clean air.</p>
-	<!-- <a routerLink="/start-project" class="cta dark">Start a Project</a> -->
-	<a routerLink="/contact-us" class="cta dark">Contact Us</a>
+	<h2>{{ 'home.build_smarter_future' | translate }}</h2>
+	<p>{{ 'home.partner_with_salanor' | translate }}</p>
+	<a routerLink="/contact-us" class="cta dark">{{ 'home.contact_us' | translate }}</a>
 </section>
-
-
-
-
-
-
 
 <section class="testimonials" *ngIf="false">
 	<div class="testimonials-header">
-	  <h2>What our clients say</h2>
-	  <p>Hear directly from the people who trust SALANOR to deliver results.</p>
+	  <h2>{{ 'home.clients_say' | translate }}</h2>
+	  <p>{{ 'home.trust_salanor' | translate }}</p>
 	</div>
-  
+
 	<div class="testimonials-grid">
 	  <div class="testimonial-card">
-		<p class="testimonial-quote">“Salanor has transformed how we operate. Their team is attentive, innovative, and truly committed to our success.”</p>
+		<p class="testimonial-quote">“{{ 'home.salanor_transformed' | translate }}.”</p>
 		<div class="testimonial-author">
 		  <img src="assets/people/person1.jpg" alt="Client 1">
 		  <div>
@@ -136,9 +119,9 @@
 		  </div>
 		</div>
 	  </div>
-  
+
 	  <div class="testimonial-card">
-		<p class="testimonial-quote">“Professional, responsive, and results-driven. Working with Salanor has been a pleasure from start to finish.”</p>
+		<p class="testimonial-quote">“{{ 'home.professional_responsive' | translate }}.”</p>
 		<div class="testimonial-author">
 		  <img src="assets/people/person2.jpg" alt="Client 2">
 		  <div>
@@ -147,9 +130,9 @@
 		  </div>
 		</div>
 	  </div>
-  
+
 	  <div class="testimonial-card">
-		<p class="testimonial-quote">“We’ve seen measurable improvement since partnering with Salanor. Highly recommended for any serious business.”</p>
+		<p class="testimonial-quote">“{{ 'home.measurable_improvement' | translate }}.”</p>
 		<div class="testimonial-author">
 		  <img src="assets/people/person3.jpg" alt="Client 3">
 		  <div>
@@ -160,6 +143,7 @@
 	  </div>
 	</div>
 </section>
+
   
 
 

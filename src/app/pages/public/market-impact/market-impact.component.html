@@ -1,8 +1,8 @@
 <section class="container py-5">
 	<!-- Header -->
 	<div class="text-center mb-5">
-	<h2 class="display-5 fw-bold">Market & Impact</h2>
-	<p class="text-muted lead">Tackling the global air quality crisis through accessible innovation</p>
+		<h2 class="display-5 fw-bold">{{ 'market_impact.header' | translate }}</h2>
+		<p class="text-muted lead">{{ 'market_impact.subheader' | translate }}</p>
 	</div>
 
 	<!-- Air Quality in Numbers -->
@@ -10,26 +10,29 @@
 		<div class="col-md-3 mb-4">
 			<h3 class="text-primary fw-bold">7M+</h3>
 			<p class="text-muted">
-				deaths annually linked to air pollution (<a href="https://www.who.int/news/item/25-03-2014-7-million-premature-deaths-annually-linked-to-air-pollution" target="_blank">WHO</a>)
+				{{ 'market_impact.stats.death' | translate }}
+				(<a href="https://www.who.int/news/item/25-03-2014-7-million-premature-deaths-annually-linked-to-air-pollution" target="_blank">WHO</a>)
 			</p>
 		</div>
 		<div class="col-md-3 mb-4">
 			<h3 class="text-primary fw-bold">99%</h3>
 			<p class="text-muted">
-				of the world breathes air exceeding WHO limits
+				{{ 'market_impact.stats.air_quality' | translate }}
 				(<a href="https://www.who.int/news/item/04-04-2022-billions-of-people-still-breathe-unhealthy-air-new-who-data" target="_blank">WHO</a>)
 			</p>
 		</div>
 		<div class="col-md-3 mb-4">
 			<h3 class="text-primary fw-bold">$8.1T</h3>
 			<p class="text-muted">
-				annual economic cost from pollution-related health issues (<a href="https://www.worldbank.org/en/news/feature/2022/09/01/what-you-need-to-know-about-climate-change-and-air-pollution" target="_blank">World Bank</a>)
+				{{ 'market_impact.stats.cost' | translate }}
+				(<a href="https://www.worldbank.org/en/news/feature/2022/09/01/what-you-need-to-know-about-climate-change-and-air-pollution" target="_blank">World Bank</a>)
 			</p>
 		</div>
 		<div class="col-md-3 mb-4">
 			<h3 class="text-primary fw-bold">almost 3 in 4</h3>
 			<p class="text-muted">
-				urban residents lack access to real-time air quality data ( <a href="https://patentpc.com/blog/urban-air-quality-monitoring-iot-sensor-deployment-stats" target="_blank" rel="noopener noreferrer">PatentPC</a> )
+				{{ 'market_impact.stats.access' | translate }}
+				(<a href="https://patentpc.com/blog/urban-air-quality-monitoring-iot-sensor-deployment-stats" target="_blank" rel="noopener noreferrer">PatentPC</a>)
 			</p>
 		</div>
 	</div>
@@ -43,32 +46,34 @@
 
 	<!-- Who It Affects -->
 	<div class="row align-items-center mb-5">
-	<div class="col-md-6">
-		<img src="https://www.motherjones.com/wp-content/uploads/2018/01/jan-23_india-smog.jpg?resize=990,557" class="img-fluid rounded shadow" alt="People affected by air quality">
-		<small>Source: <a href="https://www.motherjones.com/environment/2018/01/air-pollution-killed-more-than-6-million-people-in-2016" target="_blank" rel="noopener noreferrer">https://www.motherjones.com/environment/2018/01/air-pollution-killed-more-than-6-million-people-in-2016</a> </small>
-	</div>
-	<div class="col-md-6">
-		<h4 class="fw-bold">Who It Affects & Why It Matters</h4>
-		<ul class="list-unstyled text-muted mt-3">
-		<li><strong>Children & Elderly</strong> – vulnerable to long-term respiratory and cognitive damage</li>
-		<li><strong>Urban Workers</strong> – daily exposure lowers productivity and well-being</li>
-		<li><strong>Developing Countries</strong> – limited infrastructure for monitoring or prevention</li>
-		<li><strong>Policy Makers & NGOs</strong> – need accessible tools to inform interventions</li>
-		</ul>
-	</div>
+		<div class="col-md-6">
+			<img src="https://www.motherjones.com/wp-content/uploads/2018/01/jan-23_india-smog.jpg?resize=990,557" class="img-fluid rounded shadow" alt="People affected by air quality">
+			<small>Source: 
+				<a href="https://www.motherjones.com/environment/2018/01/air-pollution-killed-more-than-6-million-people-in-2016" target="_blank" rel="noopener noreferrer">
+					Mother Jones
+				</a>
+			</small>
+		</div>
+		<div class="col-md-6">
+			<h4 class="fw-bold">{{ 'market_impact.who_affects_title' | translate }}</h4>
+			<ul class="list-unstyled text-muted mt-3">
+				<li>{{ 'market_impact.who_affects.children' | translate }}</li>
+				<li>{{ 'market_impact.who_affects.workers' | translate }}</li>
+				<li>{{ 'market_impact.who_affects.countries' | translate }}</li>
+				<li>{{ 'market_impact.who_affects.policy' | translate }}</li>
+			</ul>
+		</div>
 	</div>
 
 	<!-- Our Unique Approach -->
 	<div class="bg-light p-5 rounded shadow mb-5">
-	<h4 class="fw-bold mb-3">Salanor’s Unique Approach</h4>
-	<p class="text-muted mb-2">
-		At Salanor, we combine AI, IoT, and human-centered design to empower people with real-time, actionable air quality data.
-	</p>
-	<ul class="list-unstyled text-muted">
-		<li><i class="bi bi-check-circle-fill text-success me-2"></i>Portable and affordable monitoring devices</li>
-		<li><i class="bi bi-check-circle-fill text-success me-2"></i>Mobile-first, user-friendly experience</li>
-		<li><i class="bi bi-check-circle-fill text-success me-2"></i>AI-driven insights to guide decisions and reduce exposure</li>
-	</ul>
+		<h4 class="fw-bold mb-3">{{ 'market_impact.approach_title' | translate }}</h4>
+		<p class="text-muted mb-2">{{ 'market_impact.approach_description' | translate }}</p>
+		<ul class="list-unstyled text-muted">
+			<li><i class="bi bi-check-circle-fill text-success me-2"></i>{{ 'market_impact.approach_items.device' | translate }}</li>
+			<li><i class="bi bi-check-circle-fill text-success me-2"></i>{{ 'market_impact.approach_items.mobile' | translate }}</li>
+			<li><i class="bi bi-check-circle-fill text-success me-2"></i>{{ 'market_impact.approach_items.ai' | translate }}</li>
+		</ul>
 	</div>
 
 	<!-- Sustainability & Social Impact -->

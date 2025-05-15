@@ -7,10 +7,11 @@ import { Waitlist } from '../../../core/interfaces/waitlist.interface';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
 	selector: 'app-product',
 	imports: [
-		CommonModule, FormsModule, MatProgressSpinnerModule, MatSlideToggleModule
+		CommonModule, FormsModule, MatProgressSpinnerModule, MatSlideToggleModule, TranslateModule
 	],
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
 	templateUrl: './product.component.html',

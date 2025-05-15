@@ -29,6 +29,8 @@
     "@netlify/angular-runtime": "^2.2.0",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
     "@nguniversal/express-engine": "^7.0.2",
+    "@ngx-translate/core": "^16.0.4",
+    "@ngx-translate/http-loader": "^16.0.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.6",
     "bootstrap-icons": "^1.12.1",
