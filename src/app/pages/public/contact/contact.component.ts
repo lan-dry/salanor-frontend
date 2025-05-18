@@ -2,12 +2,13 @@ import { ContactService } from './../../../core/services/contact.service';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-contact',
 	imports: [
-		FormsModule, CommonModule, TranslateModule
+		FormsModule, CommonModule, TranslateModule, MatProgressSpinnerModule
 	],
 	templateUrl: './contact.component.html',
 	styleUrl: './contact.component.scss'
@@ -29,15 +30,18 @@ export class ContactComponent {
 		if (form.invalid) return;
 	  
 		const formData = form.value;
+		this.isLoading = true;
 	  
 		// Replace this with a real HTTP POST to your backend
 		this.contactService.sendMessage(formData).subscribe({
 			next: () => {
+				this.isLoading = false;
 				this.successMessage = 'Your message was sent successfully!';
 				this.errorMessage = null;
 				form.resetForm();
 			},
 			error: () => {
+				this.isLoading = false;
 				this.successMessage = null;
 				this.errorMessage = 'Something went wrong. Please try again later.';
 			},

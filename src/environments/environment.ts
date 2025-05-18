@@ -1,4 +1,4 @@
 export const environment = {
-	apiUrl: 'https://164.160.89.232/api',
-	baseUrl: 'https://164.160.89.232',
+	apiUrl: 'https://salanor-backend.vercel.app/api',
+	baseUrl: 'https://salanor-backend.vercel.app',
 };

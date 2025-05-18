@@ -1,96 +1,99 @@
 <div class="container py-5">
 	<div class="row">
-	  <div class="col-md-6">
-		<!-- CONTACT INFO SECTION -->
-		<section class="section contact-info bg-transparent">
-		  <div class="content split">
-			<div class="text">
-			  <h2>{{ 'contact_us.get_in_touch' | translate }}</h2>
-			  <p>{{ 'contact_us.description' | translate }}</p>
-			  <ul class="contact-list">
-				<li><strong>{{ 'contact_us.email_label' | translate }}</strong> <a href="mailto:hello@salanor.com">{{ 'hello@salanor.com' | translate }}</a></li>
-			  </ul>
+		<div class="col-md-6">
+			<!-- CONTACT INFO SECTION -->
+			<section class="section contact-info bg-transparent">
+			<div class="content split">
+				<div class="text">
+				<h2>{{ 'contact_us.get_in_touch' | translate }}</h2>
+				<p>{{ 'contact_us.description' | translate }}</p>
+				<ul class="contact-list">
+					<li><strong>{{ 'contact_us.email_label' | translate }}</strong> <a href="mailto:hello@salanor.com">{{ 'hello@salanor.com' | translate }}</a></li>
+				</ul>
+				</div>
+
+				<div class="map">
+				<!-- Replace with actual embedded map or image -->
+				<!-- <img src="assets/map-placeholder.png" alt="Map to Salanor HQ" /> -->
+				</div>
 			</div>
-  
-			<div class="map">
-			  <!-- Replace with actual embedded map or image -->
-			  <!-- <img src="assets/map-placeholder.png" alt="Map to Salanor HQ" /> -->
-			</div>
-		  </div>
-		</section>
-	  </div>
-	  <div class="col-md-6">
-		<!-- CONTACT FORM SECTION -->
-		<section class="contact-form-section bg-transparent">
-		  <div class="form-container bg-transparent">
-			<h2>{{ 'contact_us.send_message' | translate }}</h2>
-			<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
-			  <!-- Full Name -->
-			  <div class="form-group">
-				<label for="name">{{ 'contact_us.full_name' | translate }}</label>
-				<input
-				  type="text"
-				  id="name"
-				  name="name"
-				  ngModel
-				  required
-				  #name="ngModel"
-				  [class.invalid]="name.invalid && name.touched"
-				/>
-				<div *ngIf="name.invalid && name.touched" class="error-text">{{ 'contact_us.error_name_required' | translate }}</div>
-			  </div>
-  
-			  <!-- Email Address -->
-			  <div class="form-group">
-				<label for="email">{{ 'contact_us.email_address' | translate }}</label>
-				<input
-				  type="email"
-				  id="email"
-				  name="email"
-				  ngModel
-				  required
-				  email
-				  #email="ngModel"
-				  [class.invalid]="email.invalid && email.touched"
-				/>
-				<div *ngIf="email.errors?.['required'] && email.touched" class="error-text">{{ 'contact_us.error_email_required' | translate }}</div>
-				<div *ngIf="email.errors?.['email'] && email.touched" class="error-text">{{ 'contact_us.error_email_invalid' | translate }}</div>
-			  </div>
-  
-			  <!-- Subject -->
-			  <div class="form-group">
-				<label for="subject">{{ 'contact_us.subject' | translate }}</label>
-				<input type="text" id="subject" name="subject" ngModel />
-			  </div>
-  
-			  <!-- Message -->
-			  <div class="form-group">
-				<label for="message">{{ 'contact_us.your_message' | translate }}</label>
-				<textarea
-				  id="message"
-				  name="message"
-				  ngModel
-				  required
-				  rows="5"
-				  #message="ngModel"
-				  [class.invalid]="message.invalid && message.touched"
-				></textarea>
-				<div *ngIf="message.invalid && message.touched" class="error-text">{{ 'contact_us.error_message_required' | translate }}</div>
-			  </div>
-  
-			  <!-- Submit Button -->
-			  <button type="submit" class="cta dark" [disabled]="!contactForm.valid">{{ 'contact_us.send_button' | translate }}</button>
-  
-			  <!-- Feedback Messages -->
-			  <div *ngIf="successMessage" class="success-message">{{ 'contact_us.success_message' | translate }}</div>
-			  <div *ngIf="errorMessage" class="error-message">{{ 'contact_us.error_message' | translate }}</div>
-			</form>					  
-		  </div>
-		</section>
-	  </div>
+			</section>
+		</div>
+		<div class="col-md-6">
+			<!-- CONTACT FORM SECTION -->
+			<section class="contact-form-section bg-transparent">
+				<div class="form-container bg-transparent">
+					<h2>{{ 'contact_us.send_message' | translate }}</h2>
+					<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+						<!-- Full Name -->
+						<div class="form-group">
+							<label for="name">{{ 'contact_us.full_name' | translate }}</label>
+							<input
+							type="text"
+							id="name"
+							name="name"
+							ngModel
+							required
+							#name="ngModel"
+							[class.invalid]="name.invalid && name.touched"
+							/>
+							<div *ngIf="name.invalid && name.touched" class="error-text">{{ 'contact_us.error_name_required' | translate }}</div>
+						</div>
+
+						<!-- Email Address -->
+						<div class="form-group">
+							<label for="email">{{ 'contact_us.email_address' | translate }}</label>
+							<input
+							type="email"
+							id="email"
+							name="email"
+							ngModel
+							required
+							email
+							#email="ngModel"
+							[class.invalid]="email.invalid && email.touched"
+							/>
+							<div *ngIf="email.errors?.['required'] && email.touched" class="error-text">{{ 'contact_us.error_email_required' | translate }}</div>
+							<div *ngIf="email.errors?.['email'] && email.touched" class="error-text">{{ 'contact_us.error_email_invalid' | translate }}</div>
+						</div>
+
+						<!-- Subject -->
+						<div class="form-group">
+							<label for="subject">{{ 'contact_us.subject' | translate }}</label>
+							<input type="text" id="subject" name="subject" ngModel />
+						</div>
+
+						<!-- Message -->
+						<div class="form-group">
+							<label for="message">{{ 'contact_us.your_message' | translate }}</label>
+							<textarea
+							id="message"
+							name="message"
+							ngModel
+							required
+							rows="5"
+							#message="ngModel"
+							[class.invalid]="message.invalid && message.touched"
+							></textarea>
+							<div *ngIf="message.invalid && message.touched" class="error-text">{{ 'contact_us.error_message_required' | translate }}</div>
+						</div>
+
+						<!-- Submit Button -->
+						<button type="submit" class="cta dark" [disabled]="!contactForm.valid || isLoading">
+							{{ 'contact_us.send_button' | translate }}
+							<mat-spinner *ngIf="isLoading" diameter="20" strokeWidth="3" style="margin-left: 10px;"></mat-spinner>
+						</button>
+
+						<!-- Feedback Messages -->
+						<div *ngIf="successMessage" class="success-message">{{ 'contact_us.success_message' | translate }}</div>
+						<div *ngIf="errorMessage" class="error-message">{{ 'contact_us.error_message' | translate }}</div>
+					</form>					  
+				</div>
+			</section>
+		</div>
 	</div>
 </div>
-  
+
 
 
 
