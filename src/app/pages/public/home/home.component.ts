@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { trigger, transition, animate, style } from '@angular/animations';
 
 @Component({
 	selector: 'app-home',
@@ -9,7 +10,15 @@ import { TranslateModule } from '@ngx-translate/core';
 		RouterModule, CommonModule, TranslateModule
 	],
 	templateUrl: './home.component.html',
-	styleUrl: './home.component.scss'
+	styleUrl: './home.component.scss',
+	animations: [
+		trigger('fadeIn', [
+			transition(':enter', [
+				style({ opacity: 0 }),
+				animate('1s 0.5s', style({ opacity: 1 }))
+			])
+		])
+	]
 })
 export class HomeComponent {
 	features = [
